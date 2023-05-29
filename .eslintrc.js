@@ -1,0 +1,57 @@
+module.exports = {
+  "extends": [
+    "airbnb",
+    "prettier",
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "eslint:recommended",
+    "@react-native-community",
+    "plugin:react/recommended",
+    "plugin:unicorn/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+    "react",
+    "unicorn",
+    "react-hooks",
+    "@typescript-eslint",
+    "@typescript-eslint"
+  ],
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": "latest",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "global-require": "off",
+    "react/react-in-jsx-scope": "off",
+    "unicorn/no-null": "off",
+    "unicorn/prefer-query-selector": "off",
+    "unicorn/prevent-abbreviations": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "react/function-component-definition": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": ["enum", "enumMember"],
+        "format": ["StrictPascalCase"]
+      }
+    ],
+    "unicorn/filename-case": [
+      "error",
+      {
+        "cases": {
+          "camelCase": true,
+          "pascalCase": true
+        }
+      }
+    ]
+  }
+}
