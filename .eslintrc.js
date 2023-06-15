@@ -52,6 +52,12 @@ module.exports = {
           "pascalCase": true
         }
       }
-    ]
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      },
+    ],
   }
 }
